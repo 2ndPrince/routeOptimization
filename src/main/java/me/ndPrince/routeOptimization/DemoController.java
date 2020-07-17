@@ -30,6 +30,7 @@ public class DemoController {
     @GetMapping("/employees")
     public List<Employee> getAllEmployees(){
         return (List<Employee>) employeeRepository.findAll();
+
     }
 
     @GetMapping("/call")
