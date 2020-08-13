@@ -10,5 +10,4 @@ public class RouteOptimizationApplication {
 		SpringApplication.run(RouteOptimizationApplication.class, args);
 	}
 
-	// This is by a commit to be removed
 }
