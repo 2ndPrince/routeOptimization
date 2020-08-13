@@ -2,7 +2,7 @@ package me.ndPrince.routeOptimization.exception;
 
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.boot.context.properties.bind.validation.ValidationErrors;
+import me.ndPrince.routeOptimization.model.ValidationError;
 
 import java.util.List;
 
@@ -10,5 +10,6 @@ import java.util.List;
 @Data
 public class ValidationErrorResponse {
     private String timestamp;
-    private List<ValidationErrors> validationErrorsList;
+    private Integer status;
+    private List<ValidationError> validationErrorsList;
 }
