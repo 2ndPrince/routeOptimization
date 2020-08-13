@@ -15,6 +15,7 @@ public class ValidationError {
     public enum Type{
         SPRING_VALIDATION,
         BAD_RIDE,
-        BAD_VEHICLE
+        BAD_VEHICLE,
+        ETC
     }
 }
