@@ -93,6 +93,13 @@ task oddTest(type: Test){
 	}
 }
 
+task logicTest(type: Test){
+	group "demo test"
+	useJUnitPlatform{
+		includeTags 'Logic'
+	}
+}
+
 task evenTest(type: Test){
 	group "demo test"
 	useJUnitPlatform{
