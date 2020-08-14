@@ -1,5 +1,6 @@
 package me.ndPrince.routeOptimization;
 
+import me.ndPrince.routeOptimization.annotation.LogicTest;
 import me.ndPrince.routeOptimization.model.ValidationError;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -12,6 +13,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
+@LogicTest
 class DispatchServiceTest {
 
     @InjectMocks
