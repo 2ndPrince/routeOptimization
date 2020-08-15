@@ -11,6 +11,7 @@ public class ValidationError {
     private final String field;
     private final String message;
     private final Integer errorCode;
+    private final String value;
 
     public enum Type{
         SPRING_VALIDATION,

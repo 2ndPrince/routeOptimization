@@ -33,7 +33,7 @@ public class DispatchService {
         boolean isLonValid = (-180d <= longitude) && ( longitude <= 180d);
         boolean isLatValid = (-90d <= latitude) && ( latitude <= 90d);
 
-        if(!isLatValid) errors.add(new ValidationError(ValidationError.Type.BAD_RIDE, "Location", "Invalid Lat Location. Check your Lat", 1));
-        if(!isLonValid) errors.add(new ValidationError(ValidationError.Type.BAD_RIDE, "Location", "Invalid Lon Location. Check your Lon", 1));
+        if(!isLatValid) errors.add(new ValidationError(ValidationError.Type.BAD_RIDE, "Location", "Invalid Lat Location. Check your Lat", 1, latitude.toString()));
+        if(!isLonValid) errors.add(new ValidationError(ValidationError.Type.BAD_RIDE, "Location", "Invalid Lon Location. Check your Lon", 1, longitude.toString()));
     }
 }
