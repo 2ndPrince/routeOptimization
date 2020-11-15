@@ -23,7 +23,6 @@ public class StreamPractice_Map {
         assertTrue(collect.contains(Integer.valueOf(9)));
         assertFalse(collect.contains(Integer.valueOf(10)));
         assertEquals(5, collect.size());
-
     }
 
     @Test
